@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="img2" >  
+   
+<input  type="checkbox" name="" id="yes">
+<nav class="ohk" >
+   <div>  <a href="/home.html"> HOME </a>
+    <a href="about.html"> WELCOME</a>
+    <a href="contact.html"> USER</a></div>
+</nav>
+
+<div>
+<p> <h1 id="b2" >ENTER NAME HERE</h1>
+   <input type="text" id="b1">
+</p>
+  <button class="btn1" onclick="fun()" >submit</button>
+
+</div>
+
+<script>
+    function fun(){
+        var str = document.getElementById("b1").value; 
+        if(str=="priyanshu" || str=="PRIYANSHU"){
+        alert("YOU ARE ADMIN"); }
+        else 
+        document.getElementById("b2").innerHTML= str +" Login Your Shoping Site";
+    }
+
+</script>
+</body>

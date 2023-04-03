@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="img8" style="background-color:rgba(0, 0, 0, 0.322);" >  
+   
+<input  type="checkbox" name="" id="yes">
+<nav class="ohk" >
+   <div>  <a href="/home.html"> HOME </a>
+    <a href="about.html"> WELCOME </a>  
+    <a href="contact.html">USER</a></div>
+</nav>
+<h1  id="prof" >
+    Enter password
+</h1>
+<input type="password" name="Enter password" id="ke">
+<button onclick="f()" class="pkr" >ok</button>
+</div>      
+<script >      
+        let key = prompt("Enter your Name ");
+        let value = prompt("Create password");
+        alert("Login Sucessfuly")
+        document.getElementById("prof").innerHTML = key + "  please enter password" ;
+  function f(){  
+   var a = document.getElementById("ke").value;
+   if(a==value){
+    window.location="/priyanshu.html";
+}
+    else {
+    document.getElementById("prof").innerHTML=" password is incorrect "
+    }
+}
+</script>
+</body>

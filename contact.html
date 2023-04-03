@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body class="img2" >  
+   
+<input  type="checkbox" name="" id="yes">
+<nav class="ohk" >
+   <div>  <a href="/home.html"> HOME </a>
+    <a href="about.html">WELCOME</a>
+    <a href="/contact.html">USER</a></div>
+</nav>
+
+<div class="contact1" >
+
+   <p> Enter name here:</p>
+<input type="text"  id="pas1" >
+
+
+  <p class="passs" > Enter password:</p> 
+<input type="password"  id="pas2" >
+
+<button style="margin-left:225px;margin-top:37px;" onclick="pk()"   >submit</button>
+<p class="signup"  >
+    <a href="/signup.html" style="color:white;"  >if you have not acount</a>
+</p>    
+
+<h3 id="h3" ></h3>
+</div>
+<script >
+function pk(){
+    var a = document.getElementById("pas2").value;
+    var b = document.getElementById("pas1").value;
+    if(a=="priyanshu"){
+        window.location="/priyanshu.html";   
+    }
+    else if (b=="") {
+        document.getElementById("h3").innerHTML="PLEASE ENTER YOUR NAME"
+    }
+    else {
+        document.getElementById("h3").innerHTML="PASSWORD IS INCORRECT"
+    }
+
+          }
+
+
+</script>
+
+</body>
